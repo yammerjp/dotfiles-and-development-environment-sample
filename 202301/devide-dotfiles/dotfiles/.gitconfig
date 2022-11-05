@@ -1,0 +1,5 @@
+[user]
+	name = Taro Yamada
+	email = taro@example.net
+[include]
+	path = ~/.gitconfig-company
