@@ -1,0 +1,7 @@
+[user]
+	# 自分の名前を記述する (次行は筆者の場合)
+	name = Keisuke Nakayama
+	# 自分のメールアドレスを記述する (次行は筆者の場合)
+	email = me@yammer.jp
+[includeIf "gitdir:~/src/company/**"]
+	path = ~/.gitconfig-company
