@@ -1,0 +1,8 @@
+# フォントサイズを12ポイントに指定する
+font:
+  size: 12.0
+# 起動時のウィンドウサイズを指定する
+window:
+   dimensions:
+     columns: 120
+     lines: 120
