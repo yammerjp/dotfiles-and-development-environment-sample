@@ -75,7 +75,7 @@ PROMPT_COMMAND='__git_ps1 "[\u@\h \t \w" "]\\\$ "'
 
 select-history() {
   # コマンドの実行履歴をfzfで選択肢、コマンドラインへ書き込む
-  READLINE_LINE="$(HISTTIMEFORMAT='' history | awk '{ print $2}'  | fzf --query "$READLINE_LINE")"
+  READLINE_LINE="$(HISTTIMEFORMAT='' history | awk '{ $1 = "";print}' | fzf --query "$READLINE_LINE")"
   # カーソルをコマンドラインの右端に移動
   READLINE_POINT=$#READLINE_LINE
 }
